@@ -1,0 +1,7 @@
+{
+  "name": "stoicats",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
