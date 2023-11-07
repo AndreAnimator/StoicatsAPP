@@ -12,7 +12,7 @@ export class TheCatApiServiceService {
 
   constructor(private http: HttpClient) { }
 
-  get(): Observable<any>{
+  get(){
     return this.http.get(`${this.url}search?api_key=${this.apikey}&has_breeds=1`);
   }
 }

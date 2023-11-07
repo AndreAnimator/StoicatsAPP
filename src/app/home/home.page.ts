@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TheCatApiServiceService } from '../services/the-cat-api-service.service';
+import { Observable, map } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -7,13 +8,15 @@ import { TheCatApiServiceService } from '../services/the-cat-api-service.service
   styleUrls: ['home.page.scss'],
 })
 export class HomePage implements OnInit {
-
-  catInfo: any;
+  info : any;
 
   constructor(private catApiService: TheCatApiServiceService) {}
 
   ngOnInit() {
-   this.catApiService.get().subscribe(result => {this.catInfo = result; console.log(this.catInfo)});
+    this.catApiService.get().subscribe(result => this.info = result,
+      error => {
+        console.error('Error:', error);
+      });
   }
 
 }

@@ -6,7 +6,14 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" *ngIf="catInfo">
-    <h6>{{catInfo}}</h6>
-    <img *ngIf="catInfo.url" [src]="catInfo.url">
+<ion-content [fullscreen]="true">
+  <ion-item *ngIf="info && info.length > 0">
+    <img [src]="info[0].url">
+    <h3>{{info[0].id}}</h3>
+    <h3>{{info[0].url}}</h3>
+  </ion-item>
+  <ion-item *ngIf="!info">
+    Loading...
+  </ion-item>
 </ion-content>
+
