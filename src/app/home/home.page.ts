@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TheCatApiServiceService } from '../services/the-cat-api-service.service';
-import { Observable, map } from 'rxjs';
+import { StoicismQuoteAPIServiceService } from '../services/stoicism-quote-apiservice.service';
 
 @Component({
   selector: 'app-home',
@@ -8,15 +8,15 @@ import { Observable, map } from 'rxjs';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage implements OnInit {
-  info : any;
-
-  constructor(private catApiService: TheCatApiServiceService) {}
+  catInfo : any;
+  stoicInfo: any;
+  constructor(private catApiService: TheCatApiServiceService, private stoicismApiService: StoicismQuoteAPIServiceService) {}
 
   ngOnInit() {
-    this.catApiService.get().subscribe(result => this.info = result,
-      error => {
-        console.error('Error:', error);
-      });
+    this.catApiService.get().subscribe(result => this.catInfo = result,
+      error => console.error('Error:', error));
+    this.stoicismApiService.get().subscribe(result => this.stoicInfo = result,
+      error => console.error('Error:', error));
   }
 
 }

@@ -7,12 +7,17 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-item *ngIf="info && info.length > 0">
-    <img [src]="info[0].url">
-    <h3>{{info[0].id}}</h3>
-    <h3>{{info[0].url}}</h3>
+  <ion-item *ngIf="catInfo && catInfo.length > 0">
+    <img [src]="catInfo[0].url">
+    <ion-item *ngIf="stoicInfo">
+      <h3>{{stoicInfo.quote}}</h3>
+      <h4>-{{stoicInfo.author}}</h4>
+    </ion-item>
+    <ion-item *ngIf="!stoicInfo">
+      <h3>Loading...</h3>
+    </ion-item>
   </ion-item>
-  <ion-item *ngIf="!info">
+  <ion-item *ngIf="!catInfo">
     Loading...
   </ion-item>
 </ion-content>
