@@ -1,12 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { TheCatApiServiceService } from '../services/the-cat-api-service.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage {
+export class HomePage implements OnInit {
 
-  constructor() {}
+  catInfo: any;
+
+  constructor(private catApiService: TheCatApiServiceService) {}
+
+  ngOnInit() {
+   this.catApiService.get().subscribe(result => {this.catInfo = result; console.log(this.catInfo)});
+  }
 
 }
