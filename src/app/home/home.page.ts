@@ -9,6 +9,7 @@ import * as $ from 'jquery';
  selector: 'app-home',
  templateUrl: 'home.page.html',
  styleUrls: ['home.page.scss'],
+ standalone: false,
 })
 export class HomePage implements OnInit, AfterViewInit {
  catInfo : any;

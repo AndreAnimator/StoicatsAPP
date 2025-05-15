@@ -1,5 +1,5 @@
 # To Run this Project
-You need to have [ionic](), [git]() and [npm]() installed.
+You need to have [ionic](), [git](), [npm]() and [angular]() installed. Probably.
 
 Clone this repository with 
 

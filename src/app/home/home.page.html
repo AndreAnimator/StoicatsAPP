@@ -11,8 +11,8 @@
       <div class="content-container" *ngIf="catInfo && stoicInfo && catInfo.length > 0">
         <img class="img-container" [src]="catInfo[0].url">
         <div class="quote-container">
-          <div class="quote-title">-{{stoicInfo.author}}-</div>
-          <div class="quote-text">{{stoicInfo.quote}}</div>
+          <div class="quote-title">-{{stoicInfo.data.author}}-</div>
+          <div class="quote-text">{{stoicInfo.data.quote}}</div>
         </div>
       </div>
       <div class="dialog">
