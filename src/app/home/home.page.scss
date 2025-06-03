@@ -1,7 +1,6 @@
 #body {
   width: 100%;
-  height:100vh;
-  padding-bottom: 1500px;
+  height: 100%;
   margin: 0;
   overflow: hidden;
   background-image: url("../../assets/img/tomnook.png");
@@ -9,13 +8,14 @@
   font-family: humming;
 }
 .dialog {
-  margin-top: 100px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 457px;
-  height: auto;
+  margin-top: 0.5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25vw;
+  height: 20vh;
   background: #feed9b;
-  position: absolute;
+  position: sticky;
   border-radius: 41% 41% 41% 41% / 48% 48% 41% 44%;
   box-shadow: 8px 18px 0 -8px rgba(0, 0, 0, 0.05);
   & ul {
@@ -106,10 +106,13 @@
 }
 
 .content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   .logo-container{
-    margin-top: 92px;
+    margin-top: 5vh;
     width: 100%;
-    height: 72px;
+    height: 8vh;
     position: relative;
     display: flex;
     flex-shrink: 0;
@@ -121,8 +124,8 @@
       background-size: cover;
       margin-left: 7px;
       margin-top: -25px;
-      height: 99px;
-      width: 99px;
+      height: 10vh;
+      width: 10vh;
       border-radius: 50%;
     }
     .logo-titulo{
@@ -132,11 +135,14 @@
       font-size: 32px;
       font-style: normal;
       font-weight: 600;
-      line-height: normal; 
+      line-height: normal;
       padding-right: 64px;
     }
   }
   .content-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     .img-container{
       background-color:rgba(255, 255, 255, 0.22);
       background-size: cover;
@@ -146,17 +152,17 @@
       -webkit-box-sizing: border-box;
       border-radius: 25px;
       border: 5px solid rgba(255, 255, 255, 0.55);
-      width: 449px;
-      height: 449px;
-      margin-bottom: 98px;
-      margin-left: 25px;
-      margin-right: 25px;
+      width: 25vw;
+      height: 35vh;
+      margin-bottom: 5vh;
+      margin-left: 1vw;
+      margin-right: 1vw;
     }
     .quote-container{
       margin-left: 34px;
       margin-right: 34px;
-      margin-bottom: 60px;
-      width: 431px;
+      margin-bottom: 2vh;
+      width: 25vw;
       border-radius: 15px;
       border: 9px solid #FF8C92;
       background: #F6F7E3;
