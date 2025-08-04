@@ -1,15 +1,15 @@
 .container-lista{
-    
+
     font-family: humming;
     .titulo{
-        background: #15BEA9; 
+        background: #15BEA9;
         color: #FFF;
         text-align: center;
         font-family: Inter;
         font-size: 32px;
         font-style: normal;
         font-weight: 600;
-        line-height: normal; 
+        line-height: normal;
     }
     .info{
         background: #F8F6E3;
@@ -42,14 +42,14 @@
         .button{
             margin: auto;
             width: 207px;
-            height: 62px;
+            height: 8vh;
             background: #005664;
             border-radius: 25px;
             box-shadow: 0px 5px 0px 0px #002F35;
             :hover{
                 cursor: pointer;
                 width: 207px;
-                height: 62px;
+                height: 8vh;
                 border-radius: 25px;
                 background: #247986;;
                 box-shadow: 0px 5px 0px 0px #002F35;

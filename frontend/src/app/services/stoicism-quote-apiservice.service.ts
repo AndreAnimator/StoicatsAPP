@@ -10,6 +10,6 @@ export class StoicismQuoteAPIServiceService {
   constructor(private http: HttpClient) { }
 
   get(){
-    return this.http.get("https://stoic.tekloon.net/stoic-quote");
+    return this.http.get('http://localhost:3000/api/stoicquote');
   }
 }

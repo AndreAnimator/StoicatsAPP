@@ -2,7 +2,7 @@ import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { TheCatApiServiceService } from '../services/the-cat-api-service.service';
 import { StoicismQuoteAPIServiceService } from '../services/stoicism-quote-apiservice.service';
-import { PopupModalComponent } from 'src/app/components/popup-modal-module/popup-modal/popup-modal.component';
+import { PopupModalComponent } from '../components/popup-modal-module/popup-modal/popup-modal.component';
 import * as $ from 'jquery';
 
 @Component({
