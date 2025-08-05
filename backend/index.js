@@ -1,5 +1,6 @@
             
 import express, { json } from 'express';
+import slowDown from 'express-rate-limit';
 import cors from 'cors';
 // import fetch from 'node-fetch';
 import axios from 'axios';
@@ -12,6 +13,12 @@ const apiKey = process.env.API_KEY;
 const catUrl = "https://api.thecatapi.com/v1/images/";
 const stoicUrl = "https://stoic.tekloon.net/stoic-quote";
 
+const speedLimiter = slowDown({
+  windowMs: 1 * 2 * 1000,
+  delayAfter: 1,
+  delayMs: (hits) => hits * 1000,
+});
+app.use(speedLimiter);
 
 app.use(cors());
 app.use(json());
