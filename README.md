@@ -42,8 +42,11 @@ Run with
 
 # To Contribute:
 
-I don't think there's anything to contribute but if you wish, go ahead.
-Maybe help us make tests for it and host it... I don't think it needs a documentation...
+Documentation
+Better Interfaces
+Bug detection/testing
+Best Practices suggestions
+New features ideas?
 
 # Credits and Licenses
 
