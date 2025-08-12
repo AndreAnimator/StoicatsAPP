@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
   API_KEY: process.env["API_KEY"] || 'DEF_A',
+  SERVER: process.env["SERVER"] || 'DEF_B'
 };
 
 /*

@@ -6,10 +6,11 @@ import { environment } from '../../environments/environment';
   providedIn: 'root'
 })
 export class TheCatApiServiceService {
+  server_key = environment.SERVER;
 
   constructor(private http: HttpClient) { }
 
   get(){
-    return this.http.get(`http://localhost:3000/api/catimage`);
+    return this.http.get(`${this.server_key}/api/catimage`);
   }
 }
