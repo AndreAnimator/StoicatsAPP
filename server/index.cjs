@@ -3,7 +3,7 @@ import express, { json } from 'express';
 import slowDown from 'express-rate-limit';
 import cors from 'cors';
 // import fetch from 'node-fetch';
-import axios from 'axios';
+import axios from 'axios/dist/node/axios.cjs';
 import dotenv from 'dotenv';
 // require('dotenv').config();
 dotenv.config();
