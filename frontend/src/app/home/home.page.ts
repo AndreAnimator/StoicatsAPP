@@ -35,7 +35,7 @@ export class HomePage implements OnInit, AfterViewInit {
   @Output() actionCancelled = new EventEmitter<void>();
   @Output() actionFinished = new EventEmitter<void>();
 
-  label: string = '';
+  label: string = 'a';
   currentState: 'start' | 'progress' | 'finish' = 'start';
   private progressInterval: any;
   private progressWidth: number = 0;
