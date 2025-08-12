@@ -52,3 +52,4 @@ app.get('/api/catimage', async(req, res, next) => {
 })
 
 app.listen(3000);
+module.exports = app;
